@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+<button type="submit">Entrar</button>
+<a href="#" id="forgotLink" class="small">¿Olvidaste tu contraseña?</a>
+</div>
+
+
+<div id="loginFeedback" class="msg hidden" role="alert"></div>
+</form>
+</div>
+
+
+<div class="card" style="padding:12px">
+<h3>Registro</h3>
+<form id="registerForm">
+<label for="regName">Nombre completo</label>
+<input id="regName" type="text" required />
+
+
+<label for="regEmail">Correo (será tu usuario)</label>
+<input id="regEmail" type="email" required />
+
+
+<label for="regPhone">Número de móvil</label>
+<input id="regPhone" type="tel" required />
+
+
+<label for="regPwd">Contraseña</label>
+<div class="field-inline">
+<input id="regPwd" type="password" required />
+<label class="small"><input id="regShowPwd" type="checkbox"/> mostrar</label>
+</div>
+
+
+<div style="display:flex;gap:8px;align-items:center">
+<button type="submit">Registrar</button>
+<button type="button" id="fillSample" class="secondary">Llenar ejemplo</button>
+</div>
+<div id="regFeedback" class="msg hidden" role="alert"></div>
+</form>
+</div>
+</div>
+
+
+<div class="footer">Hecho para el desafío — guarda el código en las carpetas html/, css/, js/ y súbelo a GitHub. Publique con GitHub Pages.</div>
+</div>
+
+
+<div class="card">
+<h3>Panel de Gestión / Recuperación</h3>
+<div id="panelArea">
+<p class="muted">Usa este panel para recuperar contraseña y ver usuarios creados (solo para pruebas locales).</p>
+
+
+<div style="margin-top:8px">
+<button id="showUsers" class="secondary">Mostrar usuarios en localStorage</button>
+</div>
+
+
+<div id="usersList" class="muted" style="margin-top:10px;white-space:pre-wrap;overflow:auto"></div>
+
+
+<hr />
+
+
+<div id="recoverCard">
+<h4>Recuperar contraseña</h4>
+<form id="recoverForm">
+<label for="recEmail">Correo registrado</label>
+<input id="recEmail" type="email" required />
+
+
+<label for="recNewPwd">Nueva contraseña</label>
+<div class="field-inline">
+<input id="recNewPwd" type="password" required />
+<label class="small"><input id="recShowPwd" type="checkbox"/> mostrar</label>
+</div>
+
+
+<div style="display:flex;gap:8px;margin-top:8px">
+<button type="submit">Actualizar contraseña</button>
+<button type="button" id="cancelRecover" class="secondary">Cancelar</button>
+</div>
+
+
+<div id="recFeedback" class="msg hidden" role="alert"></div>
+</form>
+</div>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
